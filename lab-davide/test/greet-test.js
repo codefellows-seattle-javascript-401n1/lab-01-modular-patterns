@@ -1,10 +1,13 @@
 'use strict';
-var greet = require(__dirname + '/../greet');
+const greeting = require(__dirname + '/../lib/greet');
 
-var expect = require('chai').expect;
+const assert = require('assert');
 
-describe('test the first greet function', function(){
-  it('should greet a "hello Davide"', function(){
-    expect(greet('Davide')).to.eql('hello Davide how are you?');
+describe('testing greeting', function(){
+  describe('testing the greeting("davide")', function(){
+    it('should return a greeting "hello davide how are you?"', function(){
+      const result = greeting('davide');
+      assert.equal(result,'hello davide how are you?');
+    });
   });
 });
