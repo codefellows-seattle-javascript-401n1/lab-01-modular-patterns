@@ -9,4 +9,11 @@ describe('greet application', () => {
       assert(app.greet('taylor'), 'hello taylor');
     });
   });
+
+  describe('command line tool', () => {
+    it('should find parameter from an array', () => {
+      const args = ['/path', '/fake/path', 'Mya']; //to mimic process.argv
+      assert(app.cli(args), 'hello Mya');
+    });
+  });
 });
