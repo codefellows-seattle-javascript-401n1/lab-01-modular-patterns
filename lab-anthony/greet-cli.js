@@ -1,5 +1,5 @@
 'use strict';
 
-const greet = require(__dirname + '/lib/greet');
+const getGreet = require(__dirname + '/lib/greet');
 
-greet();
+getGreet.greet();
