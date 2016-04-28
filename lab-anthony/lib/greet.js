@@ -1,10 +1,6 @@
 'use strict';
 
-function greet(name){
-  const person = name || '...not you.';
+module.exports = function(name){
   console.log('Hello ' + process.argv[2]);
-  return 'Hello ' + person;
-}
-greet();
-
-module.exports.greet = greet;
+  return 'Hello ' + name;
+};
