@@ -2,4 +2,4 @@
 
 var greetings = require('./lib/greetings');
 
-console.log(greetings.sayHello('bob'));
+console.log(greetings('bob'));
