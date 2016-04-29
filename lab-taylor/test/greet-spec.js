@@ -13,7 +13,7 @@ describe('greet application', () => {
   describe('command line tool', () => {
     it('should find parameter from an array', () => {
       const args = ['/path', '/fake/path', 'Mya']; //to mimic process.argv
-      assert(app.greet(args), 'hello Mya');
+      assert(app.greet(args[2]), 'hello Mya');
     });
   });
 });
