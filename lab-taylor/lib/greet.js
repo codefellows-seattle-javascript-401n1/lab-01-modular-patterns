@@ -3,11 +3,9 @@
 module.exports = (function() {
   return {
     greet: function(name){
-      return `hello ${name}`;
-    },
-    cli: function(args) {
-      const name = args[2] || 'default name';
-      return this.greet(name);
+      let n;
+      n = Array.isArray(name) ? (name[2] || 'default name') : name;
+      return `hello ${n}`;
     }
   };
 }) ();
