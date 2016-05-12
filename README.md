@@ -1,7 +1,7 @@
-![CF](assets/shield-32x32.png) Lab 01: Modular Patterns and Testing
-===
+![cf](https://i.imgur.com/7v5ASc8.png) lab-02-build-tools
+======
 
-[![Issues in Lab Help](https://badge.waffle.io/codefellows/seattle-javascript-401n1.svg?label=question&title=Lab%20Help)](https://waffle.io/codefellows/seattle-javascript-401n1) [![Issues in Bug](https://badge.waffle.io/codefellows/seattle-javascript-401n1.svg?label=bug&title=Bug)](https://waffle.io/codefellows/seattle-javascript-401n1) [![Build Status](https://travis-ci.org/codefellows-seattle-javascript-401n1/lab-01-modular-patterns.svg?branch=master)](https://travis-ci.org/codefellows-seattle-javascript-401n1/lab-01-modular-patterns)
+[![Stories in Ready](https://badge.waffle.io/codefellows/seattle-javascript-401n1.svg?label=ready&title=Ready)](http://waffle.io/codefellows/seattle-javascript-401n1) [![Build Status](https://travis-ci.org/codefellows-seattle-javascript-401n1/lab-02-build-tools.svg?branch=master)](https://travis-ci.org/codefellows-seattle-javascript-401n1/lab-02-build-tools)  
 
 ##To Submit this Assignment
   * fork this repository
@@ -11,28 +11,25 @@
   * submit a link to your PR in canvas
   * write a question and observation on canvas
 
-## Resources
-* [Node assert docs](https://nodejs.org/dist/latest-v4.x/docs/api/assert.html)
-* [Mocha docs](http://mochajs.org/#getting-started)
+## Description:
 
-##Description:
-This assignment will have you create a simple Javascript object that will be exported using the Node modular pattern we went over in class.  
+copy your lab-youname directory from the lab-01-modular-patterns assignment into the fork of this assignment  
 
-Your object should have a function named 'greet' that takes a name as a parameter and returns the string 'hello ' + name  
+For this assignment you will add a gulpfile and a package.json file to your previous assignment.  
 
-You should have at least one test that verifies the output of the function.  
+The package.json file should include all the dependencies and dev devpendencies for the project.  
 
-Your code should pass the **.eslintrc** included in this repository.  
+The gulpfile should contain a task to run the mocha/assert test as well as run eslint on all of your code. This should include your tests and your gulpfile.  
 
-Your submission should be a link to your pull request.  
+## Bonus:  
 
-##Bonus:
-For an extra point, create a command line utility that will be run using node greet.js 'some name' and will pass the input contained in that argument to the greet function and output the result to the screen.
+* For an extra point, set up a watch task that reruns your tests/eslint on changes to any of your files (minus package.json)  
+ * HINT: read the gulp docs :)
+* For another bonus point move the eslint options out of your eslint rc and into gulp  
 
-For a second bonus point, write a test that makes sure that the arguments are being processed.
+## Rubric:
 
-##Rubric:
-  * Proper Styling: 2pts
-  * Proper Submission: 2pts
-  * mocha/assert Test: 3pts
-  * Use of Modular Pattern/design of greet object/function: 3pts
+* Correct Submission: 2pts
+* Passes eslint: 2Pts
+* Package.json: 3pts
+* gulpfile: 3pts
